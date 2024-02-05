@@ -1,4 +1,4 @@
-import React from "react"; // import React (to provide access to TSX)
+//import React from "react"; // import React (to provide access to TSX)
 import "./photo_viewer.css";
 
 interface ImageProps {
