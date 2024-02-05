@@ -7,12 +7,12 @@ import { ImageSelector } from "./components/image_selector/image_selector";
 import "./App.css";
 
 function App() {
-  const [selectedImg, setSelectedImg] = useState<string>();
+  const [selectedImg, setSelectedImg] = useState<string>("");
   return (
     <div>
       <h1>React Photo Viewer</h1>
-      {selectedImg && <PhotoViewer src={selectedImg}/>}
-      <ImageSelector onImageSelect={setSelectedImg}/>
+      {selectedImg!="" && <PhotoViewer src={selectedImg}/>}
+      <ImageSelector selectedImage={selectedImg} onImageSelect={setSelectedImg}/>
     </div>
   );
 }

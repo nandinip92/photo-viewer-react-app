@@ -2,10 +2,14 @@
 import "./image_selector.css";
 import { getImageUrls } from "./get_image_urls";
 
-interface ImageSelectorProps{
-  onImageSelect:(image:string)=>void;
+interface ImageSelectorProps {
+  selectedImage: string;
+  onImageSelect: (image: string) => void;
 }
-export function ImageSelector({onImageSelect}:ImageSelectorProps) {
+export function ImageSelector({
+  selectedImage,
+  onImageSelect,
+}: ImageSelectorProps) {
   const urls = getImageUrls();
   //const [selectedImg, setSelectedImg] = useState<string>();
 
@@ -16,7 +20,11 @@ export function ImageSelector({onImageSelect}:ImageSelectorProps) {
   return (
     <div className="thumbnails-container">
       {urls.map((image) => (
-        <div className="thumbnails">
+        <div
+          className={`${
+            selectedImage === image ? "thumbnail-selected" : "thumbnail"
+          }`}
+        >
           <img src={image} onClick={() => onImageSelect(image)} />
         </div>
       ))}
