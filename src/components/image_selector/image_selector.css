@@ -6,9 +6,9 @@
   justify-content: space-evenly;
   row-gap: 0.5rem;
 }
-.thumbnails {
-  /* border: 0.2rem solid orange; */
-}
+/* .thumbnails {
+  /* border: 0.2rem solid orange; 
+} */
 .thumbnails img {
   height: 200px;
   width: 200px;
