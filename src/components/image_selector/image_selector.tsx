@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // import React (to provide access to TSX)
+//import React, { useState } from "react"; // import React (to provide access to TSX)
 import "./image_selector.css";
 import { getImageUrls } from "./get_image_urls";
 
