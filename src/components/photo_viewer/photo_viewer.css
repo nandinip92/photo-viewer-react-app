@@ -1,5 +1,5 @@
 .large-display {
-  border: 0.2rem solid orange;
+  /* border: 0.2rem solid orange; */
   display: flex;
 }
 .large-display img {

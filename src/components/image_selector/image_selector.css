@@ -1,15 +1,16 @@
 .thumbnails-container {
-  border: 0.2rem solid yellowgreen;
+  /* border: 0.2rem solid yellowgreen; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   row-gap: 0.5rem;
 }
-/* .thumbnails {
-  /* border: 0.2rem solid orange; 
-} */
-.thumbnails img {
+.thumbnail-selected {
+  border: 0.2rem solid yellowgreen;
+}
+
+img {
   height: 200px;
   width: 200px;
 }
