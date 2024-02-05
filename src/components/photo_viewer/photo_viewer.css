@@ -1,6 +1,7 @@
 .large-display {
   /* border: 0.2rem solid orange; */
   display: flex;
+  margin-bottom: 20px;
 }
 .large-display img {
   /* height: 100px; */
