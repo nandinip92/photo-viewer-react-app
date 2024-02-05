@@ -1,0 +1,9 @@
+.large-display {
+  border: 0.2rem solid orange;
+  display: flex;
+}
+.large-display img {
+  /* height: 100px; */
+  height: auto;
+  width: 100%;
+}
