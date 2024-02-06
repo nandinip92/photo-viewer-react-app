@@ -11,6 +11,8 @@ export function ImageSelector({
   onImageSelect,
 }: ImageSelectorProps) {
   const urls = getImageUrls();
+  //console.log("--> Rendering ImageSelector");
+  //console.log(urls);
   //const [selectedImg, setSelectedImg] = useState<string>();
 
   // const handleClick=(event:React.MouseEvent<HTMLImageElement>)=>{
@@ -19,8 +21,8 @@ export function ImageSelector({
   // }
   return (
     <div className="thumbnails-container">
-      {urls.map((image) => (
-        <div
+      {urls.map((image,index) => (
+        <div key={index}
           className={`${
             selectedImage === image ? "thumbnail-selected" : "thumbnail"
           }`}
